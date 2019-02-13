@@ -1,0 +1,122 @@
+
+[root@cndcovpd02 ~]# top
+top - 20:44:29 up 98 days,  6:17,  2 users,  load average: 8.30, 8.69, 8.03
+Tasks: 573 total,   9 running, 563 sleeping,   0 stopped,   1 zombie
+Cpu(s):  3.4%us,  3.4%sy,  0.0%ni, 82.8%id, 10.3%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   6068852k total,  5720248k used,   348604k free,   203128k buffers
+Swap:  4193276k total,   115708k used,  4077568k free,  4825416k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
+ 5085 root      20   0 15496 2412 1720 R 100.0  0.0   0:00.06 top
+ 1715 root      20   0 4111m 1644 1180 S 36.1  0.0   8775:16 qemu-dm
+ 5231 root      20   0 2513m  19m 2348 S 36.1  0.3   9340:17 xend
+    1 root      20   0 19420 1336 1104 S  0.0  0.0   0:05.06 init
+    2 root      20   0     0    0    0 S  0.0  0.0 314:26.90 kthreadd
+    3 root      20   0     0    0    0 S  0.0  0.0  72:25.67 ksoftirqd/0
+    5 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kworker/0:0H
+    7 root      20   0     0    0    0 S  0.0  0.0 384:42.39 rcu_sched
+    8 root      20   0     0    0    0 S  0.0  0.0   0:00.06 rcu_bh
+    9 root      20   0     0    0    0 S  0.0  0.0 130:08.12 rcuos/0
+   10 root      20   0     0    0    0 S  0.0  0.0   0:00.00 rcuob/0
+   11 root      RT   0     0    0    0 S  0.0  0.0   0:41.78 migration/0
+   12 root      RT   0     0    0    0 S  0.0  0.0   0:35.83 watchdog/0
+   13 root      RT   0     0    0    0 S  0.0  0.0   0:33.60 watchdog/1
+   14 root      RT   0     0    0    0 S  0.0  0.0   0:52.64 migration/1
+   15 root      20   0     0    0    0 S  0.0  0.0  78:27.18 ksoftirqd/1
+   17 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kworker/1:0H
+   18 root      20   0     0    0    0 S  0.0  0.0  22:08.66 rcuos/1
+   19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 rcuob/1
+   20 root      RT   0     0    0    0 S  0.0  0.0   0:32.29 watchdog/2
+   21 root      RT   0     0    0    0 S  0.0  0.0   0:32.00 migration/2
+   22 root      20   0     0    0    0 S  0.0  0.0  66:19.69 ksoftirqd/2
+   24 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kworker/2:0H
+   25 root      20   0     0    0    0 S  0.0  0.0  33:09.70 rcuos/2
+   26 root      20   0     0    0    0 S  0.0  0.0   0:00.01 rcuob/2
+   27 root      RT   0     0    0    0 S  0.0  0.0   0:32.59 watchdog/3
+   28 root      RT   0     0    0    0 S  0.0  0.0   0:49.39 migration/3
+   29 root      20   0     0    0    0 S  0.0  0.0  76:15.86 ksoftirqd/3
+   31 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kworker/3:0H
+   32 root      20   0     0    0    0 S  0.0  0.0  21:00.95 rcuos/3
+   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 rcuob/3
+   34 root      RT   0     0    0    0 S  0.0  0.0   0:28.71 watchdog/4
+   35 root      RT   0     0    0    0 S  0.0  0.0   0:28.82 migration/4
+   36 root      20   0     0    0    0 S  0.0  0.0  46:56.78 ksoftirqd/4
+   38 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kworker/4:0H
+   39 root      20   0     0    0    0 S  0.0  0.0 103:09.97 rcuos/4
+   40 root      20   0     0    0    0 S  0.0  0.0   0:00.00 rcuob/4
+   41 root      RT   0     0    0    0 S  0.0  0.0   0:30.32 watchdog/5
+   42 root      RT   0     0    0    0 S  0.0  0.0   0:51.08 migration/5
+   43 root      20   0     0    0    0 S  0.0  0.0  63:11.83 ksoftirqd/5
+[root@cndcovpd02 ~]# vmstat
+procs -----------memory---------- ---swap-- -----io---- --system-- -----cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 5  2 115708 411036 203052 4762332    0    0  4657   580    0    0  0  2 93  2  3
+[root@cndcovpd02 ~]# vmstat
+procs -----------memory---------- ---swap-- -----io---- --system-- -----cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+23  1 115708 416152 203064 4756808    0    0  4657   580    0    0  0  2 93  2  3
+
+
+====
+
+[root@cndcovpd02 /]#  xenpm get-cpu-topology
+CPU     core    socket  node
+CPU0     0       0       0
+CPU1     0       0       0
+CPU2     1       0       0
+CPU3     1       0       0
+CPU4     2       0       0
+CPU5     2       0       0
+CPU6     3       0       0
+CPU7     3       0       0
+CPU8     4       0       0
+CPU9     4       0       0
+CPU10    5       0       0
+CPU11    5       0       0
+CPU12    6       0       0
+CPU13    6       0       0
+CPU14    8       0       0
+CPU15    8       0       0
+CPU16    9       0       0
+CPU17    9       0       0
+CPU18    10      0       0
+CPU19    10      0       0
+CPU20    11      0       0
+CPU21    11      0       0
+CPU22    12      0       0
+CPU23    12      0       0
+CPU24    13      0       0
+CPU25    13      0       0
+CPU26    14      0       0
+CPU27    14      0       0
+CPU28    0       1       1
+CPU29    0       1       1
+CPU30    1       1       1
+CPU31    1       1       1
+CPU32    2       1       1
+CPU33    2       1       1
+CPU34    3       1       1
+CPU35    3       1       1
+CPU36    4       1       1
+CPU37    4       1       1
+CPU38    5       1       1
+CPU39    5       1       1
+CPU40    6       1       1
+CPU41    6       1       1
+CPU42    8       1       1
+CPU43    8       1       1
+CPU44    9       1       1
+CPU45    9       1       1
+CPU46    10      1       1
+CPU47    10      1       1
+CPU48    11      1       1
+CPU49    11      1       1
+CPU50    12      1       1
+CPU51    12      1       1
+CPU52    13      1       1
+CPU53    13      1       1
+CPU54    14      1       1
+CPU55    14      1       1
+[root@cndcovpd02 /]#
+
+=======

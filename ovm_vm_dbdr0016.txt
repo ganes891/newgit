@@ -1,0 +1,264 @@
+usdbprd0046 :
+
+Oracle Linux Server release 7.1
+NAME="Oracle Linux Server"
+VERSION="7.1"
+ID="ol"
+VERSION_ID="7.1"
+PRETTY_NAME="Oracle Linux Server 7.1"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:oracle:linux:7:1"
+HOME_URL="https://linux.oracle.com/"
+BUG_REPORT_URL="https://bugzilla.oracle.com/"
+
+=======================
+
+
+FILE SYSTEMS: df -hP
+---------------------
+
+Filesystem                      Size  Used  Avail  Use%  Mounted           on
+/dev/mapper/vgrp00-Root         7.8G  379M  7.0G   6%    /
+devtmpfs                        3.8G  0     3.8G   0%    /dev
+tmpfs                           3.8G  0     3.8G   0%    /dev/shm
+tmpfs                           3.8G  369M  3.5G   10%   /run
+tmpfs                           3.8G  0     3.8G   0%    /sys/fs/cgroup
+/dev/mapper/vgrp00-Usr          3.9G  2.0G  1.7G   54%   /usr
+/dev/mapper/vgrp02-u104         20G   45M   19G    1%    /u103/oradata
+/dev/mapper/vgrp02-u103         20G   45M   19G    1%    /u102/oradata
+/dev/mapper/vgrp02-u106         50G   21G   26G    46%   /u105/oradata
+/dev/mapper/vgrp02-u101         50G   3.9G  43G    9%    /u101/oradata
+/dev/mapper/vgrp02-u001         50G   9.6G  38G    21%   /u001/app/oracle
+/dev/mapper/vgrp02-u105         99G   61M   94G    1%    /u104/oradata
+/dev/mapper/vgrp03-u102         443G  73M   421G   1%    /u106/oradata
+/dev/xvdb1                      488M  120M  333M   27%   /boot
+/dev/mapper/vgrp00-Home         2.0G  8.5M  1.8G   1%    /home
+/dev/mapper/vgrp00-Apps         488M  780K  452M   1%    /apps
+/dev/mapper/vgrp00-Tmp          2.0G  68M   1.8G   4%    /tmp
+/dev/mapper/vgrp00-Var          6.9G  4.3G  2.3G   66%   /var
+/dev/mapper/vgrp00-VarLog       2.0G  77M   1.8G   5%    /var/log
+/dev/mapper/vgrp00-VarLogAudit  976M  39M   870M   5%    /var/log/audit
+tmpfs                           773M  0     773M   0%    /run/user/22032
+tmpfs                           773M  0     773M   0%    /run/user/15002
+tmpfs                           773M  0     773M   0%    /run/user/0
+
+FILE SYSTEM COUNT
+-----------------
+
+PV LIST DETAILS:
+------------------
+
+  PV         VG     Fmt  Attr PSize    PFree   
+  /dev/xvdb2 vgrp00 lvm2 a--   <49.44g  <22.94g
+  /dev/xvdc1 vgrp01 lvm2 a--   <24.94g  320.00m
+  /dev/xvdd1 vgrp02 lvm2 a--  <500.00g <210.00g
+  /dev/xvde1 vgrp03 lvm2 a--  <500.00g  <50.00g
+
+Volume Group LIST
+----------------------
+
+  VG     #PV #LV #SN Attr   VSize    VFree   
+  vgrp00   1   8   0 wz--n-  <49.44g  <22.94g
+  vgrp01   1   1   0 wz--n-  <24.94g  320.00m
+  vgrp02   1   6   0 wz--n- <500.00g <210.00g
+  vgrp03   1   1   0 wz--n- <500.00g  <50.00g
+
+========================================================
+
+dbdr0016
+
+
+Linux dbdr0016 2.6.32-696.1.1.el6.x86_64 #1 SMP Tue Mar 21 12:19:18 EDT 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+LSB_VERSION=base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
+Red Hat Enterprise Linux Server release 6.9 (Santiago)
+Red Hat Enterprise Linux Server release 6.9 (Santiago)
+
+
+KERNEL VERSION
+---------------
+2.6.32-696.1.1.el6.x86_64
+
+UPTIME & USER INFO
+------------------
+
+ 14:52:31 up 89 days,  4:13,  0 users,  load average: 0.00, 0.00, 0.00
+
+FILESYSTEM SORT: df -hP | sort
+------------------------------
+/dev/mapper/apps-apps        40G   14G   24G    36%   /apps
+/dev/mapper/datavg-oradata   443G  293G  127G   70%   /oradata
+/dev/mapper/logvg-oralog1    192G  54G   129G   30%   /oralog
+/dev/mapper/vgrp00-Home      7.8G  24M   7.4G   1%    /home
+/dev/mapper/vgrp00-LogVol04  15G   4.4G  9.6G   32%   /
+/dev/mapper/vgrp00-Tmp       3.9G  13M   3.7G   1%    /tmp
+/dev/mapper/vgrp00-Var       7.8G  1.6G  5.9G   22%   /var
+/dev/xvda1                   976M  94M   832M   11%   /boot
+Filesystem                   Size  Used  Avail  Use%  Mounted   on
+tmpfs                        7.8G  2.8G  5.1G   36%   /dev/shm
+
+
+PV LIST DETAILS:
+------------------
+
+  PV         VG     Fmt  Attr PSize   PFree 
+  /dev/xvda2 vgrp00 lvm2 a--u  43.00g     0 
+  /dev/xvdb1 swap   lvm2 a--u  16.00g     0 
+  /dev/xvdc1 apps   lvm2 a--u  40.00g     0 
+  /dev/xvdd1 datavg lvm2 a--u 299.50g     0 
+  /dev/xvde1 logvg  lvm2 a--u 200.00g  5.00g
+  /dev/xvdf  datavg lvm2 a--u 199.50g 49.50g
+
+Volume Group LIST
+----------------------
+
+  VG     #PV #LV #SN Attr   VSize   VFree 
+  apps     1   1   0 wz--n-  40.00g     0 
+  datavg   2   1   0 wz--n- 499.00g 49.50g
+  logvg    1   1   0 wz--n- 200.00g  5.00g
+  swap     1   1   0 wz--n-  16.00g     0 
+  vgrp00   1   5   0 wz--n-  43.00g     0 
+======================================
+
+
+dbdr0018
+
+HOST INFORMATION
+----------------
+
+Linux dbdr0018 2.6.32-504.23.4.el6.x86_64 #1 SMP Fri May 29 10:16:43 EDT 2015 x86_64 x86_64 x86_64 GNU/Linux
+
+LSB_VERSION=base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
+Red Hat Enterprise Linux Server release 6.8 (Santiago)
+Red Hat Enterprise Linux Server release 6.8 (Santiago)
+
+
+KERNEL VERSION
+---------------
+2.6.32-504.23.4.el6.x86_64
+
+FILE SYSTEMS: df -hP
+---------------------
+
+Filesystem                    Size  Used  Avail  Use%  Mounted          on
+/dev/mapper/vgrp00-LogVol04   15G   5.1G  9.0G   37%   /
+tmpfs                         10G   0     10G    0%    /dev/shm
+/dev/mapper/apps-apps         40G   7.6G  30G    21%   /apps
+/dev/sda1                     976M  96M   830M   11%   /boot
+/dev/mapper/vgrp00-Home       7.8G  23M   7.4G   1%    /home
+/dev/mapper/vgrp00-Tmp        3.9G  8.7M  3.7G   1%    /tmp
+/dev/mapper/vgrp00-Var        7.8G  1.6G  5.9G   21%   /var
+/dev/mapper/datavg1-oradata1  985G  568G  368G   61%   /oradata1
+/dev/mapper/datavg2-oradata2  985G  608G  327G   66%   /oradata2
+/dev/mapper/logvg1-oralog1    985G  334G  601G   36%   /oralog1
+utprd0037.medimmune.com:/iso  1.3T  638G  585G   53%   /mnt/nfs
+10.15.8.61:/dbbackup          2.2T  1.5T  714G   67%   /mnt/migrations
+
+FILE SYSTEM COUNT
+-----------------
+13
+
+PV LIST DETAILS:
+------------------
+
+  PV         VG      Fmt  Attr PSize    PFree
+  /dev/sda2  vgrp00  lvm2 a--u   43.00g    0 
+  /dev/sdb1  swap    lvm2 a--u   16.00g    0 
+  /dev/sdc1  apps    lvm2 a--u   40.00g    0 
+  /dev/sdd1  datavg1 lvm2 a--u 1000.00g    0 
+  /dev/sde1  datavg2 lvm2 a--u 1000.00g    0 
+  /dev/sdf1  logvg1  lvm2 a--u 1000.00g    0 
+
+Volume Group LIST
+----------------------
+
+  VG      #PV #LV #SN Attr   VSize    VFree
+  apps      1   1   0 wz--n-   40.00g    0 
+  datavg1   1   1   0 wz--n- 1000.00g    0 
+  datavg2   1   1   0 wz--n- 1000.00g    0 
+  logvg1    1   1   0 wz--n- 1000.00g    0 
+  swap      1   1   0 wz--n-   16.00g    0 
+  vgrp00    1   5   0 wz--n-   43.00g    0 
+
+===================================================
+dbdr0019 :
+
+Linux dbdr0019 2.6.32-696.13.2.el6.x86_64 #1 SMP Fri Sep 22 12:32:14 EDT 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+Red Hat Enterprise Linux Server release 6.9 (Santiago)
+Red Hat Enterprise Linux Server release 6.9 (Santiago)
+
+
+KERNEL VERSION
+---------------
+2.6.32-696.13.2.el6.x86_64
+
+
+FILE SYSTEMS: df -hP
+---------------------
+
+Filesystem                            Size  Used  Avail  Use%  Mounted         on
+/dev/mapper/vgrp00-Root               7.8G  2.7G  4.7G   37%   /
+tmpfs                                 7.8G  3.3G  4.6G   42%   /dev/shm
+/dev/mapper/vgrp00-Apps               40G   6.5G  32G    18%   /apps
+/dev/xvda1                            488M  81M   383M   18%   /boot
+/dev/mapper/vgrp00-Home               2.0G  57M   1.8G   4%    /home
+/dev/mapper/vgrp00-Tmp                2.0G  71M   1.8G   4%    /tmp
+/dev/mapper/vgrp00-Usr                3.9G  1.1G  2.6G   30%   /usr
+/dev/mapper/vgrp00-Var                2.0G  641M  1.2G   35%   /var
+/dev/mapper/vgrp00-VarLog             2.0G  616M  1.3G   34%   /var/log
+/dev/mapper/vgrp00-VarLogAudit        976M  37M   889M   4%    /var/log/audit
+/dev/mapper/datavg-lv_data            197G  60M   187G   1%    /data
+utprd0037.medimmune.com:/iso          1.3T  950G  273G   78%   /mnt/nfs
+10.15.8.126:/omw_nfs_emp3prd_dr       133G  56G   78G    42%   /EMP3PRD
+10.15.8.126:/omw_nfs_emp3prd_logs_dr  190G  43G   148G   23%   /EMP3PRD_LOGS
+
+FILE SYSTEM COUNT
+-----------------
+15
+
+PV LIST DETAILS:
+------------------
+
+  PV         VG     Fmt  Attr PSize   PFree  
+  /dev/xvda2 vgrp00 lvm2 a--u 103.94g  42.44g
+  /dev/xvdb1 vgrp01 lvm2 a--u  15.94g      0 
+  /dev/xvdc1 datavg lvm2 a--u 200.00g 148.00m
+
+Volume Group LIST
+----------------------
+
+  VG     #PV #LV #SN Attr   VSize   VFree  
+  datavg   1   1   0 wz--n- 200.00g 148.00m
+  vgrp00   1   8   0 wz--n- 103.94g  42.44g
+  vgrp01   1   1   0 wz--n-  15.94g      0 
+
+Logical Volume List
+-------------
+
+  LV          VG     Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  lv_data     datavg -wi-ao---- 199.85g                                                    
+  Apps        vgrp00 -wi-ao----  40.50g                                                    
+  Home        vgrp00 -wi-ao----   2.00g                                                    
+  Root        vgrp00 -wi-ao----   8.00g                                                    
+  Tmp         vgrp00 -wi-ao----   2.00g                                                    
+  Usr         vgrp00 -wi-ao----   4.00g                                                    
+  Var         vgrp00 -wi-ao----   2.00g                                                    
+  VarLog      vgrp00 -wi-ao----   2.00g                                                    
+  VarLogAudit vgrp00 -wi-ao----   1.00g                                                    
+  Swap        vgrp01 -wi-ao----  15.94g                                                    
+
+===================================
+
+
+[?14/?04/?2018 07:09]  Babu, Subash:  
+linux ks= ftp://10.19.229.141/pub/KS/OEL6-DB.cfg ip=10.14.40.31 netmask=255.255.255.0 gateway=10.14.40.1 device=eth0 
+
+ftp://10.19.229.141/pub/CHECK/PRECHECK/dbdr0019/check-PRE-dbdr0019-2018-03-09.txt 
+
+usdbprd0046   --- completed 
+dbdr0016 -- db build going on 
+dbdr0019 -- nbackup available about to start backup data restoration. 
+dbdr0018 -- Os installation going 
+
+

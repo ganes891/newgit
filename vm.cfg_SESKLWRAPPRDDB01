@@ -1,0 +1,26 @@
+vif = ['mac=00:21:f6:4a:fb:a0,bridge=10040d4475']
+OVM_simple_name = 'SESKLWRAPPRDDB01'
+vnclisten = '127.0.0.1'
+serial = 'pty'
+disk = ['file:/OVS/Repositories/0004fb00000300000adbc26916fdff89/ISOs/0004fb0000150000d86f85ea0f6f69b9.iso,xvda:cdrom,r', 'file:/OVS/Repositories/0004fb0000030000ee0184996cec6781/VirtualDisks/0004fb0000120000bdfb1931e6f8079c.img,xvdb,w', 'file:/OVS/Repositories/0004fb0000030000ee0184996cec6781/VirtualDisks/0004fb0000120000d9c4d6a33809137c.img,xvdc,w', 'file:/OVS/Repositories/0004fb0000030000ee0184996cec6781/VirtualDisks/0004fb0000120000400993eb412366de.img,xvdd,w']
+vncunused = 1
+uuid = '0004fb00-0006-0000-be8e-1de2f5268778'
+on_reboot = 'restart'
+boot = 'c'
+cpu_weight = 27500
+memory = 16384
+cpu_cap = 0
+maxvcpus = 4
+OVM_high_availability = True
+vnc = 1
+OVM_description = ''
+on_poweroff = 'destroy'
+on_crash = 'restart'
+guest_os_type = 'linux'
+name = '0004fb0000060000be8e1de2f5268778'
+builder = 'hvm'
+vcpus = 4
+keymap = 'en-us'
+OVM_os_type = 'Oracle Linux 7'
+OVM_cpu_compat_group = ''
+OVM_domain_type = 'xen_hvm_pv'
